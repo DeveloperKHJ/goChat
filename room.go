@@ -21,7 +21,7 @@ func createRoom(w http.ResponseWriter, req *http.Request, ps httprouter.Params) 
 	// binding 패키지로 room 생성 요청 정보를 room 타입 값으로 변환
 	r := new(Room)
 	errs := binding.Bind(req, r)
-	if errs.Handle(w) {
+	if errs != nil {
 		return
 	}
 
