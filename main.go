@@ -60,6 +60,7 @@ func main() {
 
 	router.POST("/rooms", createRoom)
 	router.GET("/rooms", retrieveRooms)
+	router.GET("/rooms/:id/messages", retireveMessages)
 
 	// negroni 미들웨어 생성
 	n := negroni.Classic()
