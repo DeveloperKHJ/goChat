@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link rel="shortcut icon" href="">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
     minimum-scale=1.0, width=device-width">
     <title>Simple Chat</title>
@@ -10,7 +11,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-xs-12">
-                    {{template "room"}}
+                    {{template "rooms"}}
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    {{template "messages"}}
                 </div>
             </div>
         </div>
